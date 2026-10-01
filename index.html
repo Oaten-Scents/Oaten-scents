@@ -3,89 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Oaten Scents - Beautifully crafted wax melts, candles and car air fresheners.">
-  <title>Oaten Scents</title>
+
+  <title>Oaten Scents | Wax Melts, Candles & Car Fresheners</title>
+
+  <meta name="description" content="Oaten Scents creates beautiful wax melts, candles and car air fresheners, made to keep your space smelling amazing.">
 
   <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #fffaf7;
-      color: #3b2b25;
+      background: #fff7fb;
+      color: #3d2733;
       line-height: 1.6;
     }
 
     header {
-      background: #f3dfd2;
-      padding: 20px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      background: linear-gradient(135deg, #f7a8c4, #f6c1d5);
+      padding: 25px 20px;
+      text-align: center;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
     }
 
-    .logo {
-      font-size: 28px;
-      font-weight: bold;
-      color: #6b4030;
+    header h1 {
+      font-size: 42px;
+      color: white;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: white;
+      font-size: 17px;
+      margin-top: 5px;
+    }
+
+    nav {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
 
     nav a {
-      color: #4b3026;
+      color: #d85b8a;
       text-decoration: none;
-      margin-left: 22px;
       font-weight: bold;
+      margin: 0 15px;
     }
 
     nav a:hover {
-      color: #a76b50;
+      color: #a93d68;
     }
 
     .hero {
-      min-height: 75vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       text-align: center;
-      padding: 60px 20px;
-      background: linear-gradient(
-        rgba(255,250,247,0.85),
-        rgba(243,223,210,0.85)
-      );
+      padding: 80px 20px;
+      background: #fff0f6;
     }
 
-    .hero-content {
-      max-width: 750px;
-    }
-
-    .hero h1 {
-      font-size: clamp(45px, 8vw, 80px);
-      color: #6b4030;
+    .hero h2 {
+      font-size: 38px;
+      color: #c84f7d;
       margin-bottom: 15px;
     }
 
     .hero p {
-      font-size: 20px;
-      margin-bottom: 30px;
-      color: #5a4036;
+      max-width: 650px;
+      margin: auto;
+      font-size: 18px;
+      color: #5d4651;
     }
 
     .button {
       display: inline-block;
-      padding: 14px 28px;
-      background: #8c5a46;
+      margin-top: 25px;
+      padding: 13px 28px;
+      background: #e878a1;
       color: white;
       text-decoration: none;
       border-radius: 30px;
@@ -94,110 +94,102 @@
     }
 
     .button:hover {
-      background: #6b4030;
+      background: #c95780;
       transform: translateY(-2px);
     }
 
     section {
-      padding: 70px 7%;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 38px;
-      margin-bottom: 40px;
-      color: #6b4030;
-    }
-
-    .about {
-      max-width: 850px;
-      margin: auto;
-      text-align: center;
-      font-size: 18px;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 25px;
+      padding: 60px 20px;
       max-width: 1100px;
       margin: auto;
     }
 
-    .product-card {
-      background: white;
-      border-radius: 18px;
-      padding: 30px 20px;
+    section h2 {
       text-align: center;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-      transition: 0.25s;
+      color: #c84f7d;
+      font-size: 30px;
+      margin-bottom: 35px;
     }
 
-    .product-card:hover {
-      transform: translateY(-6px);
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
     }
 
-    .product-icon {
+    .product {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+      transition: 0.2s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product .icon {
       font-size: 55px;
       margin-bottom: 15px;
     }
 
-    .product-card h3 {
-      font-size: 24px;
+    .product h3 {
+      color: #d85b8a;
       margin-bottom: 10px;
-      color: #6b4030;
+      font-size: 23px;
     }
 
-    .product-card p {
-      color: #654c42;
-      margin-bottom: 20px;
+    .about {
+      background: white;
+      border-radius: 20px;
+      padding: 40px 25px;
+      text-align: center;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+    }
+
+    .about p {
+      max-width: 750px;
+      margin: auto;
+      color: #5d4651;
+      font-size: 17px;
     }
 
     .contact {
-      background: #f3dfd2;
       text-align: center;
+      background: #fff0f6;
+      max-width: none;
     }
 
     .contact p {
-      font-size: 18px;
-      margin-bottom: 25px;
+      margin-bottom: 10px;
+      font-size: 17px;
     }
 
     footer {
-      background: #3b2b25;
+      background: #3d2733;
       color: white;
       text-align: center;
       padding: 25px 15px;
     }
 
-    .socials {
-      margin-top: 15px;
+    footer p {
+      font-size: 14px;
     }
 
-    .socials a {
-      color: white;
-      text-decoration: none;
-      margin: 0 8px;
-      font-weight: bold;
-    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
 
-    @media (max-width: 700px) {
-      header {
-        flex-direction: column;
-        gap: 12px;
+      .hero h2 {
+        font-size: 30px;
       }
 
       nav a {
         margin: 0 7px;
         font-size: 14px;
-      }
-
-      .hero {
-        min-height: 65vh;
-      }
-
-      section {
-        padding: 55px 5%;
       }
     }
   </style>
@@ -205,113 +197,85 @@
 
 <body>
 
-  <!-- HEADER -->
   <header>
-    <div class="logo">Oaten Scents</div>
-
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#products">Products</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>Oaten Scents</h1>
+    <p>Beautiful scents for every space ✨</p>
   </header>
 
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <h1>Oaten Scents</h1>
+  <div class="hero" id="home">
+    <h2>Make Your Space Smell Amazing 🌸</h2>
 
-      <p>
-        Beautiful scents for your home, car and everyday life.
-        Discover our collection of wax melts, candles and car air fresheners.
-      </p>
+    <p>
+      Discover Oaten Scents — bringing beautiful fragrances into your home,
+      car and everyday life with our wax melts, candles and car air fresheners.
+    </p>
 
-      <a href="#products" class="button">Shop Our Products</a>
-    </div>
-  </section>
+    <a href="#products" class="button">Explore Our Products</a>
+  </div>
 
-
-  <!-- ABOUT -->
-  <section id="about">
-    <h2 class="section-title">About Oaten Scents</h2>
-
-    <div class="about">
-      <p>
-        Oaten Scents brings your space to life with beautifully crafted
-        wax melts, candles and car air fresheners. We love creating
-        gorgeous scents that make your surroundings feel cosy, fresh
-        and welcoming.
-      </p>
-    </div>
-  </section>
-
-
-  <!-- PRODUCTS -->
   <section id="products">
-    <h2 class="section-title">Our Products</h2>
+    <h2>Our Products</h2>
 
     <div class="products">
 
-      <div class="product-card">
-        <div class="product-icon">🕯️</div>
-        <h3>Candles</h3>
+      <div class="product">
+        <div class="icon">🕯️</div>
+        <h3>Luxury Candles</h3>
         <p>
-          Beautifully scented candles designed to make your space
-          feel warm, cosy and inviting.
+          Beautifully scented candles designed to make your home feel warm,
+          relaxing and fresh.
         </p>
-        <a href="#contact" class="button">Enquire</a>
       </div>
 
-
-      <div class="product-card">
-        <div class="product-icon">✨</div>
+      <div class="product">
+        <div class="icon">🌸</div>
         <h3>Wax Melts</h3>
         <p>
-          Fill your home with amazing fragrances with our
-          selection of scented wax melts.
+          Fill your home with gorgeous fragrances using our selection of
+          scented wax melts.
         </p>
-        <a href="#contact" class="button">Enquire</a>
       </div>
 
-
-      <div class="product-card">
-        <div class="product-icon">🚗</div>
+      <div class="product">
+        <div class="icon">🚗</div>
         <h3>Car Air Fresheners</h3>
         <p>
-          Keep your car smelling fresh with our gorgeous
-          range of car air fresheners.
+          Keep your car smelling fresh with our long-lasting car
+          air fresheners.
         </p>
-        <a href="#contact" class="button">Enquire</a>
       </div>
 
     </div>
   </section>
 
+  <section id="about">
+    <h2>About Oaten Scents</h2>
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <h2 class="section-title">Get In Touch</h2>
-
-    <p>
-      Interested in our products? Follow us or get in touch
-      to find out more.
-    </p>
-
-    <a href="mailto:hello@oatenscents.co.uk" class="button">
-      Contact Oaten Scents
-    </a>
-
-    <div class="socials">
-      <a href="#">Instagram</a>
-      <a href="#">TikTok</a>
-      <a href="#">Facebook</a>
+    <div class="about">
+      <p>
+        Oaten Scents is all about bringing amazing fragrances into everyday
+        life. From relaxing evenings at home to freshening up your car,
+        we're here to help make every space smell incredible.
+      </p>
     </div>
   </section>
 
+  <section class="contact" id="contact">
+    <h2>Get In Touch 💗</h2>
 
-  <!-- FOOTER -->
+    <p>Interested in our products?</p>
+    <p>Follow Oaten Scents for updates, new scents and more.</p>
+
+    <a href="#" class="button">Contact Us</a>
+  </section>
+
   <footer>
     <p>© 2026 Oaten Scents. All rights reserved.</p>
   </footer>
